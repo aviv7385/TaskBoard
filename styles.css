@@ -1,0 +1,208 @@
+/* general page styling */
+
+body, html {
+    height: 100%;
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(/Assets/images/tile.jpg);
+    background-repeat: repeat;
+}
+
+@font-face {
+    src: url(/Assets/fonts/Exceptional\ Experience.ttf);
+    font-family: casualFont;
+}
+
+@font-face{
+    src: url(/Assets/fonts/Wildest\ Grass\ Demo.otf);
+    font-family: doIt;
+}
+
+/* ============================== */
+/* styling the header of the page */
+
+h1 {
+    text-align: center;
+    font-family: casualFont;
+    font-size: 40pt;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+
+/* ==================================== */
+/* styling the form + table */
+
+form {
+   margin: auto;
+   width: 40%;
+   height: 20%;
+   min-width: 500px;
+   min-height: 160px;
+   display: block;
+   background-image: url("/Assets/images/formbg.jpg");
+}
+
+.form-table {
+    margin: auto;
+    min-width: 285px;
+    margin-top: 3px;
+}
+
+label {
+    margin-top: 16px;
+    margin-left: 8px;
+    font-family: doIt;
+    font-size: 10pt;
+}
+
+textarea {
+    display: block;
+    background-color: transparent;
+    overflow: auto;
+    margin-right: 30px;
+    margin-left: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+}
+
+input[type=date]{
+    width: 130px;
+    display: block;
+    margin-left: 8px;
+}
+
+input[type=time]{
+    width: 130px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+button {
+    width: 75px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: block;
+    margin-left: 20px;
+}
+
+td > div {
+    text-align: right;
+}
+
+/* ======================================== */
+/* styling the notes */
+
+.note {
+    width: 220px;
+    height: 280px;
+    padding-top: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    overflow: auto;
+    background-image: url(/Assets/images/notebg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.note:last-of-type {
+    animation: fade-in 4s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.taskTextCont {
+    height: 145px;
+    width: 170px;
+    margin-left: 10px;
+    font-size: 12pt;
+    overflow: auto;
+    font-family: cursive;
+}
+
+.dateTimeTextCont {
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+
+/* ==================================== */
+/* styling Glyphicon from Bootsrap */
+
+@font-face {
+    font-family:'Glyphicons Halflings';src:url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot');
+    src:url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix') 
+    format('embedded-opentype'),url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff') 
+    format('woff'),url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.ttf') 
+    format('truetype'),url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') 
+    format('svg');
+}
+    
+.glyphicon {
+    position:relative;
+    top:1px;
+    display:inline-block;
+    font-family:'Glyphicons Halflings';
+    font-style:normal;
+    font-weight:normal;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;}
+
+.glyphicon-remove-circle:before {
+    content:"\e088";
+}
+
+#clearButtonContainer{
+    height: 26px;
+    width: 26px;
+    margin-left: 150px;
+    position: relative;
+    float: left;
+    top: -87%;
+}
+
+#clearButton {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 5px;
+    margin-left: 165px;
+    position: relative; 
+    float: left;
+    top: -85%;
+    visibility: hidden;
+}
+
+
+#clear {
+    color: #FBF8A3;
+    font-family: 'Glyphicons Halflings'
+}
+
+

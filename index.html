@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="/main.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My Task Board</h1>
+    </div>
+    <!-- <div class="form-wrapper"> -->
+    <form>
+        <table class="form-table">
+
+            <tr>
+                <td>
+                    <label for="taskBox">My Task:</label>
+                </td>
+                <td>
+                    <label for="datetime">&nbsp; Done By:</label>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="taskBox" name="myTask" rows="4"></textarea>
+                </td>
+                <td>
+                    <input id="dateBox" type="date" name="byDate" placeholder="dd/mm/yy">
+                    <input id="timeBox" type="time" name="byTime">
+
+                </td>
+                <td>
+                    <div class="buttons">
+                        <button id="submitButton" type="button" class="btn btn-danger"
+                            onclick="validateAndSave()">Submit</button><br>
+                        <button id="resetButton" type="reset" class="btn btn-danger">Reset</button>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="container"></div>
+
+   
+</body>
+
+</html>
