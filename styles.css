@@ -11,17 +11,17 @@ body, html {
 }
 
 body {
-    background-image: url(/Assets/images/tile.jpg);
+    background-image: url(Assets/images/tile.jpg);
     background-repeat: repeat;
 }
 
 @font-face {
-    src: url(/Assets/fonts/Exceptional\ Experience.ttf);
+    src: url(Assets/fonts/Exceptional\ Experience.ttf);
     font-family: casualFont;
 }
 
 @font-face{
-    src: url(/Assets/fonts/Wildest\ Grass\ Demo.otf);
+    src: url(Assets/fonts/Wildest\ Grass\ Demo.otf);
     font-family: doIt;
 }
 
@@ -112,7 +112,7 @@ td > div {
     margin-left: 20px;
     display: inline-block;
     overflow: auto;
-    background-image: url(/Assets/images/notebg.png);
+    background-image: url(Assets/images/notebg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
