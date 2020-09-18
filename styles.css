@@ -47,7 +47,7 @@ form {
    min-width: 500px;
    min-height: 160px;
    display: block;
-   background-image: url("/Assets/images/formbg.jpg");
+   background-image: url("Assets/images/formbg.jpg");
 }
 
 .form-table {
